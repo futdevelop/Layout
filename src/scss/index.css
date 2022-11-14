@@ -489,8 +489,8 @@ body {
 /* {----------- footer -----------} */
 .footer__body {
   display: grid;
-  border-top: 1px solid #d8d8d8;
   grid-template-columns: 250px 1fr 290px;
+  margin-top: 30px;
   padding-top: calc(80px + 50 * (100vw - 320px) / 1120);
   padding-bottom: calc(60px + 30 * (100vw - 320px) / 1120);
   -moz-column-gap: calc(80px + 80 * (100vw - 320px) / 1120);
@@ -503,11 +503,6 @@ body {
 }
 .footer__logo {
   margin: 0px 0px 0.6666666667em 0px;
-  color: #000;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 120.8333333333%;
-  z-index: 5;
 }
 .footer__text {
   color: #898989;
@@ -516,6 +511,7 @@ body {
 .footer__text:not(:last-child) {
   margin: 0px 0px 1em 0px;
 }
+
 .contacts-footer {
   display: flex;
   flex-direction: column;
@@ -548,7 +544,6 @@ body {
 @media (min-width: 767.98px) {
   .menu-footer__column {
     flex: 0 1 33.33%;
-    margin-right: 100px;
   }
 }
 .menu-footer__title {
@@ -557,15 +552,4 @@ body {
 }
 .menu-footer__list li:not(:last-child) {
   margin: 0px 0px 15px 0px;
-}
-.menu-footer__link {
-  color: #616161;
-  transition: color 0.3s ease 0s;
-  line-height: 120%;
-  font-weight: 500;
-}
-@media (any-hover: hover) {
-  .menu-footer__link:hover {
-    color: #616161;
-  }
 }/*# sourceMappingURL=index.css.map */
